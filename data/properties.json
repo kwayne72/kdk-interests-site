@@ -1,0 +1,48 @@
+{
+  "properties": [
+    {
+      "id": "palmer-1",
+      "title": "Palmer Residential Home",
+      "location": "Palmer, Texas",
+      "status": "Unavailable",
+      "type": "Manufactured Home",
+      "price": "Contact for current details",
+      "beds": "",
+      "baths": "",
+      "sqft": "",
+      "description": "Spacious manufactured home nestled in the quiet community of Palmer, Texas. Enjoy expansive covered concrete porches that stretch the length of the home \u2014 ideal for outdoor living under the shade of mature trees that fill the large private yard.\n\nThe open-concept interior features a bright kitchen with central island, white cabinetry, vaulted ceilings, and seamless flow into the living area. Located in Ellis County with convenient access to Waxahachie and the greater Dallas\u2013Fort Worth metro while still offering a peaceful residential feel.\n\nThis well-loved home has solid character and room to make it your own. Some exterior updates are visible and expected with a property of this age.",
+      "features": [
+        "Expansive Covered Porches",
+        "Large Yard with Mature Shade Trees",
+        "Open-Concept Kitchen & Living",
+        "Quiet Palmer Neighborhood",
+        "Security System in Place",
+        "Easy Access to DFW Area"
+      ],
+      "images": [
+        "images/palmer/01-exterior.jpg",
+        "images/palmer/02-exterior-side.jpg",
+        "images/palmer/03-side-view.jpg",
+        "images/palmer/04-porch-long.jpg",
+        "images/palmer/05-porch-view.jpg",
+        "images/palmer/06-yard-trees.jpg",
+        "images/palmer/07-interior-kitchen.jpg",
+        "images/palmer/08-porch-interior.jpg",
+        "images/palmer/09-photo.jpg",
+        "images/palmer/10-photo.jpg",
+        "images/palmer/11-photo.jpg",
+        "images/palmer/12-photo.jpg",
+        "images/palmer/13-photo.jpg",
+        "images/palmer/14-photo.jpg",
+        "images/palmer/15-photo.jpg",
+        "images/palmer/16-photo.jpg",
+        "images/palmer/17-photo.jpg",
+        "images/palmer/18-photo.jpg",
+        "images/palmer/19-photo.jpg",
+        "images/palmer/20-photo.jpg"
+      ],
+      "leaseUrl": "documents/Texas_Residential_Lease_Agreement.docx",
+      "applicationUrl": "application.html"
+    }
+  ]
+}

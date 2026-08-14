@@ -1,0 +1,9 @@
+{
+  "name": "KDK First Drawing",
+  "active": true,
+  "intro": "Join our first learning contest! Enter your email below and watch for the winner announcement on our YouTube channel.",
+  "rules": "1. One entry per person using a valid email address.\n2. No purchase necessary.\n3. Winner will be selected randomly and announced on our YouTube channel.\n4. By entering you agree to receive contest-related emails only (we never spam).\n5. Contest open to residents of the United States who are 18+.\n6. We reserve the right to update these rules at any time.",
+  "youtubeUrl": "https://www.youtube.com/@YOUR_CHANNEL",
+  "formEndpoint": "https://formspree.io/f/YOUR_FORM_ID",
+  "successMessage": "You're entered! Watch our YouTube channel for the winner announcement."
+}
