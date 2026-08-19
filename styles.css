@@ -63,7 +63,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 84px;
 }
 
 .logo {
@@ -71,6 +71,11 @@ a {
   align-items: center;
   gap: 10px;
   font-weight: 600;
+}
+
+.logo-img {
+  height: 60px;
+  width: auto;
 }
 
 .logo-mark {
@@ -576,6 +581,11 @@ a {
   padding: 4px 8px;
 }
 
+.footer-logo-img {
+  height: 42px;
+  width: auto;
+}
+
 /* ===== Form success state ===== */
 .form-success {
   text-align: center;
@@ -619,6 +629,14 @@ a {
 
   .contact-form {
     padding: 24px;
+  }
+
+  .logo-img {
+    height: 48px;
+  }
+
+  .header-inner {
+    height: 72px;
   }
 
   .footer-inner {

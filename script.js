@@ -48,7 +48,7 @@ if (form) {
     // Build a clean mailto link so the user can send it right away
     // Once you set up Formspree or another service, replace this logic
     const subject = encodeURIComponent(
-      property ? `Inquiry: ${property}` : 'Property Inquiry – KDK'
+      property ? `Inquiry: ${property}` : 'Home Inquiry – KDK Interests LLC'
     );
 
     let body = `Name: ${name}\nEmail: ${email}`;
