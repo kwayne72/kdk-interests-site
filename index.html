@@ -3,46 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KDK Interests LLC | Texas Home Rentals</title>
-  <meta name="description" content="KDK Interests LLC — Quality home rentals in Palmer, Ennis, Waxahachie and surrounding Texas communities.">
+  <title>KDK Interests | Quality Rental Homes in Texas</title>
+  <meta name="description" content="KDK Interests offers well-maintained rental homes in Palmer, TX and the greater Dallas–Fort Worth area. Browse available properties, download the lease, apply online, and contact us about rental homes in Palmer, TX.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
       <a href="#" class="logo">
-        <img src="logo-header.jpg" alt="KDK Interests LLC — Home Rentals" class="logo-img">
+        <img src="images/logo.svg" alt="KDK Interests" width="160" height="52">
       </a>
       <nav class="nav">
         <a href="#properties">Properties</a>
         <a href="#about">About</a>
+        
         <a href="#contact" class="nav-cta">Contact</a>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">
+      <button class="menu-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </div>
+    <nav class="mobile-nav">
+      <a href="#properties">Properties</a>
+      <a href="#about">About</a>
+      
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
-
-  <!-- Mobile Nav -->
-  <div class="mobile-nav">
-    <a href="#properties">Properties</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </div>
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container hero-content">
-      <h1>Quality Rental Homes<br>in Texas</h1>
-      <p class="hero-sub">KDK Interests LLC offers well-maintained homes for long-term tenants. Currently featuring a property in Palmer, TX.</p>
-      <div class="hero-actions">
-        <a href="#properties" class="btn btn-primary">View Available Homes</a>
-        <a href="#contact" class="btn btn-outline">Request Information</a>
+    <div class="container">
+      <div class="hero-content">
+        <h1>Quality Rental Homes<br>in Texas</h1>
+        <p class="hero-sub">KDK Interests provides clean, well-maintained homes for long-term tenants. Currently featuring a property in Palmer, TX with more coming soon.</p>
+        <div class="hero-actions">
+          <a href="#properties" class="btn btn-primary">View Our Properties</a>
+          </div>
       </div>
     </div>
   </section>
@@ -51,49 +53,51 @@
   <section id="properties" class="section properties">
     <div class="container">
       <div class="section-header">
-        <h2>Available Properties</h2>
-        <p>Browse our current listings. More homes coming soon.</p>
+        <h2>Current Properties</h2>
+        <p>Browse our current listings. More homes coming soon across Ellis County and the DFW area.</p>
       </div>
 
-      <div class="property-grid">
-        <!-- Palmer Property -->
+      <div id="property-grid" class="property-grid">
+        <!-- Fallback static card (overridden by JS when properties.json loads) -->
         <article class="property-card">
-          <div class="property-image">
-            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80" alt="House in Palmer, Texas">
-            <span class="badge">Available</span>
+          <div class="property-image" data-images='["images/palmer/01-exterior.jpg","images/palmer/02-exterior-side.jpg","images/palmer/03-side-view.jpg","images/palmer/04-porch-long.jpg","images/palmer/05-porch-view.jpg","images/palmer/06-yard-trees.jpg","images/palmer/07-interior-kitchen.jpg","images/palmer/08-porch-interior.jpg","images/palmer/09-under-porch.jpg","images/palmer/10-porch-angle.jpg","images/palmer/11-porch-chairs.jpg","images/palmer/12-porch-long2.jpg"]'>
+            <img src="images/palmer/01-exterior.jpg" alt="Palmer Residential Home exterior" loading="lazy" class="carousel-img">
+            <span class="badge unavailable">Unavailable</span>
+            <button type="button" class="carousel-btn prev" aria-label="Previous photo">‹</button>
+            <button type="button" class="carousel-btn next" aria-label="Next photo">›</button>
+            <div class="carousel-counter"><span class="current">1</span> / <span class="total">20</span></div>
           </div>
           <div class="property-body">
             <div class="property-location">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               Palmer, Texas
             </div>
-            <h3>Residential Home</h3>
-            <p class="property-desc">
-              Comfortable single-family home located in Palmer, TX. Ideal for tenants looking for a quiet neighborhood with easy access to nearby towns and major roads.
-            </p>
+            <h3>Palmer Residential Home</h3>
+            <p class="property-desc">Spacious manufactured home with expansive covered porches, mature shade trees, and an open-concept kitchen & living area. Quiet neighborhood with easy DFW access.</p>
             <ul class="property-features">
-              <li>Single-family home</li>
-              <li>Front yard</li>
-              <li>Residential neighborhood</li>
+              <li>Expansive Covered Porches</li>
+              <li>Large Yard with Mature Trees</li>
+              <li>Open-Concept Kitchen</li>
+              <li>Quiet Neighborhood</li>
             </ul>
-            <a href="#contact" class="btn btn-secondary btn-block" data-property="Palmer, TX – Residential Home">
-              Request Details
-            </a>
+            <div class="property-actions">
+              <a href="#contact" class="btn btn-sm btn-secondary" data-property="Palmer Residential Home">Request Details</a>
+              <a href="documents/Texas_Residential_Lease_Agreement.docx" download class="btn btn-sm btn-outline-dark">Download Lease</a>
+              <a href="application.html" class="btn btn-sm btn-outline-dark">Apply Online</a>
+            </div>
           </div>
         </article>
 
-        <!-- Placeholder for future properties -->
+        <!-- Coming soon card -->
         <article class="property-card coming-soon">
-          <div class="property-image placeholder">
-            <div class="placeholder-content">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              <span>Coming Soon</span>
-            </div>
+          <div class="property-image">
+            <img src="images/palmer/06-yard-trees.jpg" alt="Coming soon properties" loading="lazy">
+            <span class="badge">Coming Soon</span>
           </div>
           <div class="property-body">
             <h3>More Homes Soon</h3>
-            <p class="property-desc">We are actively adding more quality rental properties in the Dallas–Fort Worth and Ellis County areas.</p>
-            <a href="#contact" class="btn btn-outline btn-block">Get Notified</a>
+            <p class="property-desc">We are actively adding quality rental properties in the Dallas–Fort Worth and Ellis County areas.</p>
+            <a href="#contact" class="btn btn-sm btn-outline-dark">Get Notified</a>
           </div>
         </article>
       </div>
@@ -101,32 +105,33 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="section about">
-    <div class="container about-grid">
-      <div class="about-content">
-        <h2>About KDK</h2>
-        <p>KDK Interests LLC is a Texas-based company focused on providing clean, well-maintained rental homes for responsible tenants.</p>
-        <p>We currently manage a property in Palmer and are expanding our portfolio across the greater Dallas area and Ellis County.</p>
-        <p>Whether you’re looking for a long-term home or want to inquire about future availability, we’d love to hear from you.</p>
-      </div>
-      <div class="about-highlights">
-        <div class="highlight">
-          <strong>Local Focus</strong>
-          <span>Palmer & surrounding Texas communities</span>
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <h2>About KDK Interests</h2>
+          <p>KDK Interests is a Texas-based company focused on providing clean, well-maintained rental homes for responsible tenants.</p>
+          <p>We currently manage a property in Palmer and are expanding our portfolio across the greater Dallas area and Ellis County.</p>
+          <p>Whether you’re looking for a long-term home or want to inquire about future availability, we’d love to hear from you.</p>
         </div>
-        <div class="highlight">
-          <strong>Straightforward Process</strong>
-          <span>Clear communication and responsive management</span>
-        </div>
-        <div class="highlight">
-          <strong>Quality Homes</strong>
-          <span>Well-kept properties ready for good tenants</span>
+        <div class="about-highlights">
+          <div class="highlight">
+            <strong>Local Focus</strong>
+            <span>Palmer & surrounding Texas communities</span>
+          </div>
+          <div class="highlight">
+            <strong>Straightforward Process</strong>
+            <span>Clear communication and responsive management</span>
+          </div>
+          <div class="highlight">
+            <strong>Quality Homes</strong>
+            <span>Well-kept properties ready for good tenants</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact" class="section contact">
     <div class="container">
       <div class="section-header">
@@ -135,32 +140,32 @@
       </div>
 
       <div class="contact-wrapper">
-        <form class="contact-form" id="contactForm">
+        <form id="contactForm" class="contact-form">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required placeholder="Your name">
+              <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
               <label for="email">Email *</label>
-              <input type="email" id="email" name="email" required placeholder="you@example.com">
+              <input type="email" id="email" name="email" required>
             </div>
           </div>
           <div class="form-group">
             <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(optional)">
+            <input type="tel" id="phone" name="phone">
           </div>
           <div class="form-group">
             <label for="property">Property of Interest</label>
             <select id="property" name="property">
               <option value="">Select a property…</option>
-              <option value="Palmer, TX – Residential Home">Palmer, TX – Residential Home</option>
-              <option value="General Inquiry / Future Properties">General Inquiry / Future Properties</option>
+              <option value="Palmer Residential Home">Palmer, TX – Residential Home</option>
+              <option value="General Inquiry">General Inquiry / Future Properties</option>
             </select>
           </div>
           <div class="form-group">
             <label for="message">Message *</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Tell us a bit about what you’re looking for, move-in timeline, or any questions you have…"></textarea>
+            <textarea id="message" name="message" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Send Message</button>
           <p class="form-note">We’ll reply by email as soon as possible.</p>
@@ -169,9 +174,17 @@
         <div class="contact-info">
           <h3>Contact Details</h3>
           <p>Prefer to email us directly?</p>
-          <a href="mailto:info@kdktx.com" class="email-link">info@kdktx.com</a>
-          <p class="small">Replace this address with your real email once the site is live.</p>
-          
+          <a href="mailto:paige@kdktx.com" class="email-link">paige@kdktx.com</a>
+
+          <div class="info-block">
+            <h4>Lease & Application</h4>
+            <p>Apply online using our secure application form, or download the lease document. You can also request details via the contact form.</p>
+            <div class="download-links">
+              <a href="documents/Texas_Residential_Lease_Agreement.docx" download class="btn btn-sm btn-outline-dark">Download Lease</a>
+              <a href="application.html" class="btn btn-sm btn-outline-dark">Apply Online</a>
+            </div>
+          </div>
+
           <div class="info-block">
             <h4>Service Area</h4>
             <p>Palmer, TX and surrounding communities in Ellis County and the greater Dallas–Fort Worth area.</p>
@@ -185,10 +198,9 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="logo-mark.png" alt="KDK Interests LLC" class="footer-logo-img">
-        <span>KDK Interests LLC</span>
+        <img src="images/logo.svg" alt="KDK Interests" height="32">
       </div>
-      <p>© <span id="year"></span> KDK Interests LLC. All rights reserved.</p>
+      <p>© <span id="year"></span> KDK Interests. All rights reserved.</p>
     </div>
   </footer>
 
