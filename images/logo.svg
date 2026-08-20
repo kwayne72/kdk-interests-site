@@ -1,46 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 90" width="340" height="90" role="img" aria-label="KDK Interests">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 80" width="310" height="80" role="img" aria-label="KDK Interests">
   <defs>
-    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1a9a8a"/>
+    <linearGradient id="t" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1aa896"/>
       <stop offset="100%" stop-color="#1a7a6d"/>
     </linearGradient>
   </defs>
 
-  <!-- Left K – solid navy (matches concept) -->
-  <path d="M22 12 
-           L40 12 
-           L40 38 
-           L62 12 
-           L84 12 
-           L54 48 
-           L84 78 
-           L62 78 
-           L40 52 
-           L40 78 
-           L22 78 
-           Z" fill="#0f2c4c"/>
+  <!-- Left K – clean bold navy -->
+  <path fill="#0f2c4c" d="M16 8h18v24L58 8h24L52 40l30 32H58L34 48v24H16z"/>
 
-  <!-- Right interlocking form (teal) – creates the dual-partner lock -->
-  <path d="M78 12 
-           L110 12 
-           Q140 12 140 45 
-           Q140 78 110 78 
-           L78 78 
-           L78 62 
-           L108 62 
-           Q122 62 122 45 
-           Q122 28 108 28 
-           L78 28 
-           Z" fill="url(#tealGrad)"/>
+  <!-- Right interlocking teal form -->
+  <path fill="url(#t)" d="M72 8h32c20 0 34 13 34 32s-14 32-34 32H72V56h30c10 0 18-7 18-16s-8-16-18-16H72z"/>
 
-  <!-- Negative space cut for interlocking feel (navy overlay edge) -->
-  <path d="M78 28 L96 28 L96 62 L78 62 Z" fill="#0f2c4c"/>
+  <!-- Interlock cut -->
+  <path fill="#0f2c4c" d="M72 24h20v32H72z"/>
 
   <!-- Wordmark -->
-  <text x="158" y="42" 
-        font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" 
-        font-size="30" font-weight="700" fill="#0f2c4c" letter-spacing="1.5">KDK</text>
-  <text x="158" y="66" 
-        font-family="Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif" 
-        font-size="12" font-weight="600" fill="#1a7a6d" letter-spacing="3.5">INTERESTS</text>
+  <g font-family="Inter,system-ui,-apple-system,sans-serif">
+    <text x="154" y="36" font-size="26" font-weight="700" fill="#0f2c4c" letter-spacing="1.4">KDK</text>
+    <text x="154" y="54" font-size="11" font-weight="600" fill="#1a7a6d" letter-spacing="3.2">INTERESTS</text>
+  </g>
 </svg>
