@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0c1016;
+  --color-ink-soft: #141a22;
+  --color-ink-mid: #1c2430;
+  --color-paper: #f3eee4;
+  --color-paper-deep: #e6ddd0;
+  --color-ivory: #f7f3ea;
+  --color-sage: #8fa392;
+  --color-sage-deep: #6e8574;
+  --color-fg: #f3eee4;
+  --color-fg-ink: #14181f;
+  --color-muted: #9aa3b0;
+  --color-subtle: #6e7784;
+  --color-line: color-mix(in oklab, var(--color-paper) 14%, transparent);
+  --color-line-strong: color-mix(in oklab, var(--color-paper) 28%, transparent);
+
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, "Times New Roman", serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --text-hero: clamp(3.4rem, 11vw, 8.25rem);
+  --text-hero--line-height: 0.88;
+  --text-hero--letter-spacing: -0.03em;
+  --text-display: clamp(2.25rem, 5.5vw, 4.5rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.025em;
+  --text-title: clamp(1.65rem, 3vw, 2.35rem);
+  --text-title--line-height: 1.15;
+  --text-lede: clamp(1.15rem, 1.6vw, 1.4rem);
+  --text-lede--line-height: 1.5;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 28px;
+  --radius-2xl: 36px;
+
+  --shadow-border: 0 0 0 1px color-mix(in oklab, var(--color-paper) 10%, transparent);
+  --shadow-border-hover: 0 0 0 1px color-mix(in oklab, var(--color-paper) 18%, transparent);
+  --shadow-lift: 0 24px 60px -28px rgb(0 0 0 / 0.55);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-smooth: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-ink);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-ink);
+    color: var(--color-fg);
+    min-height: 100dvh;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-sage) 45%, transparent);
+    color: var(--color-paper);
+  }
+
+  img {
+    outline: 1px solid color-mix(in oklab, var(--color-paper) 10%, transparent);
+    outline-offset: -1px;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .kicker {
+    font-family: var(--font-sans);
+    font-size: 0.6875rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-muted);
+  }
+
+  .hairline {
+    height: 1px;
+    background: var(--color-line);
+  }
+
+  .hero-veil {
+    background-image: linear-gradient(
+      to top,
+      color-mix(in oklab, var(--color-ink) 70%, transparent) 0%,
+      color-mix(in oklab, var(--color-ink) 8%, transparent) 48%,
+      color-mix(in oklab, var(--color-ink) 18%, transparent) 100%
+    );
+  }
+
+  .hero-veil-room {
+    background-image: linear-gradient(
+      to top,
+      color-mix(in oklab, var(--color-ink) 78%, transparent) 0%,
+      color-mix(in oklab, var(--color-ink) 18%, transparent) 52%,
+      color-mix(in oklab, var(--color-ink) 28%, transparent) 100%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes ken {
+  from {
+    transform: scale(1.06);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes meridian {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rise {
+  animation: rise 700ms var(--ease-out) both;
+}
+
+.hero-zoom {
+  animation: ken 18s var(--ease-smooth) both;
+}
+
+.spin-slow {
+  animation: meridian 48s linear infinite;
+}
