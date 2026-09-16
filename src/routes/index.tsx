@@ -56,10 +56,14 @@ function Hero() {
           style={{ animationDelay: "360ms" }}
         >
           <Button asChild size="lg">
-            <Link to="/tx">Enter KDK TX</Link>
+            <a href="https://kdktx.com" target="_blank" rel="noreferrer">
+              Enter KDK TX
+            </a>
           </Button>
           <Button asChild size="lg" variant="outline">
-            <Link to="/media">Enter KDK Media</Link>
+            <a href="https://kennyanddon.com" target="_blank" rel="noreferrer">
+              Enter KDK Media
+            </a>
           </Button>
         </div>
         <a
@@ -120,7 +124,7 @@ function Routes() {
       </div>
       <div className="grid gap-5 lg:grid-cols-2">
         <RouteCard
-          href="/tx"
+          href="https://kdktx.com"
           image="/images/tx-home.jpg"
           alt="A Texas home at golden hour with a deep covered porch and mature trees"
           kicker="Property"
@@ -130,13 +134,14 @@ function Routes() {
           external="https://kdktx.com"
         />
         <RouteCard
-          href="/media"
+          href="https://kennyanddon.com"
           image="/images/media-studio.jpg"
           alt="A dark film studio with a 35mm camera and a shaft of tungsten light"
           kicker="Studio"
           title="KDK Media"
           lede="Stories with a pulse."
           meta="Film · Brand · Culture"
+          external="https://kennyanddon.com"
         />
       </div>
     </Section>
@@ -164,7 +169,12 @@ function RouteCard({
 }) {
   return (
     <article className="group relative overflow-hidden rounded-2xl bg-ink">
-      <Link to={href} className="block">
+      <a
+        href={href}
+        target={href.startsWith("http") ? "_blank" : undefined}
+        rel={href.startsWith("http") ? "noreferrer" : undefined}
+        className="block"
+      >
         <div className="relative aspect-[4/5] sm:aspect-[16/11] lg:aspect-[4/5]">
           <img
             src={image}
@@ -179,7 +189,7 @@ function RouteCard({
             <p className="mt-4 text-xs tracking-[0.18em] text-muted uppercase">{meta}</p>
           </div>
         </div>
-      </Link>
+      </a>
       {external ? (
         <a
           href={external}

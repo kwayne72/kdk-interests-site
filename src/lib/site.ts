@@ -24,7 +24,7 @@ export const companies = [
     name: "KDK Media",
     short: "Stories",
     href: "/media",
-    external: null,
+    external: "https://kennyanddon.com",
     eyebrow: "Studio",
     title: "KDK Media",
     lede: "Stories with a pulse.",
