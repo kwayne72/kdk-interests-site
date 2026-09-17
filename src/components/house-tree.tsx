@@ -6,17 +6,11 @@ export function HouseTree() {
     <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
       <p className="kicker">How the house is built</p>
       <div className="mt-10 flex w-full flex-col items-center">
-        <div className="rounded-lg border border-line px-6 py-4">
-          <p className="kicker text-sage">The Trust</p>
-          <p className="mt-2 font-display text-2xl font-medium text-paper">Family trust</p>
-          <p className="mt-1 text-sm text-muted">The long horizon</p>
-        </div>
-        <div className="h-10 w-px bg-line-strong" aria-hidden />
         <div className="w-full max-w-md rounded-xl border border-line-strong bg-ink-soft px-8 py-6">
           <p className="kicker text-sage">Parent</p>
           <p className="mt-2 font-display text-3xl font-medium text-paper">KDK Interests LLC</p>
           <p className="mt-2 text-sm leading-relaxed text-muted">
-            The company inside the Trust. The roof over every room.
+            The parent company. The roof over every room.
           </p>
         </div>
         <div className="relative h-12 w-full max-w-md" aria-hidden>

@@ -10,8 +10,7 @@ export const Route = createFileRoute("/about")({
       { title: "About the house — KDK Interests LLC" },
       {
         name: "description",
-        content:
-          "How KDK Interests LLC is built: a parent company inside a family trust, holding KDK TX and KDK Media.",
+        content: "How KDK Interests LLC is built and the companies under its roof.",
       },
     ],
   }),
@@ -22,18 +21,6 @@ function AboutPage() {
   return (
     <main>
       <Section className="pt-28 sm:pt-36">
-        <p className="kicker">About the house</p>
-        <h1 className="mt-4 max-w-3xl font-display text-display font-medium">
-          One roof. Distinct rooms. A Trust at the foundation.
-        </h1>
-        <p className="mt-6 max-w-2xl text-lede text-muted">
-          KDK Interests LLC is the parent company — the entity that will live inside the Trust,
-          and the company that holds the others. It is not a brand stacked on brands. It is a
-          house.
-        </p>
-      </Section>
-
-      <Section className="pt-0">
         <HouseTree />
       </Section>
 
@@ -52,9 +39,8 @@ function AboutPage() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted">
               <p>
-                A Trust is a way of holding things past a single season. The LLC is the working
-                company inside that idea. KDK TX and KDK Media are the rooms you can walk into
-                today.
+                KDK Interests is the working parent company. KDK TX and KDK Media are the rooms
+                you can walk into today.
               </p>
               <p>
                 Each room keeps its own door — its own site, its own voice — so a tenant looking
@@ -72,17 +58,9 @@ function AboutPage() {
       </Section>
 
       <Section>
-        <div className="grid gap-8 sm:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2">
           <article>
             <p className="kicker">01</p>
-            <h3 className="mt-3 font-display text-2xl font-medium">The Trust</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted">
-              The long-horizon vessel. KDK Interests LLC is what the Trust holds. Continuity
-              without the coldness of a chart.
-            </p>
-          </article>
-          <article>
-            <p className="kicker">02</p>
             <h3 className="mt-3 font-display text-2xl font-medium">The parent</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted">
               KDK Interests LLC. Governance, stewardship, and the front door the world meets
@@ -90,7 +68,7 @@ function AboutPage() {
             </p>
           </article>
           <article>
-            <p className="kicker">03</p>
+            <p className="kicker">02</p>
             <h3 className="mt-3 font-display text-2xl font-medium">The rooms</h3>
             <p className="mt-3 text-sm leading-relaxed text-muted">
               Operating companies with their own sites. KDK TX for homes. KDK Media for stories.

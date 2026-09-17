@@ -88,11 +88,6 @@ function Intro() {
           <h2 className="mt-4 font-display text-display font-medium text-paper">
             We hold companies the way a good house holds a life.
           </h2>
-          <p className="mt-6 max-w-xl text-lede text-muted">
-            KDK Interests LLC is the company that sits inside the Trust — the roof over every
-            room. KDK TX keeps the homes. KDK Media keeps the stories. Two routes from one front
-            door, with space for the next.
-          </p>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted">
             Professional enough for the long view. Alive enough that you can feel who lives here.
           </p>
@@ -210,8 +205,8 @@ function Structure() {
     <Section>
       <HouseTree />
       <p className="mx-auto mt-12 max-w-lg text-center text-sm leading-relaxed text-muted">
-        The Trust holds the parent. The parent holds the companies. Each company does one thing
-        with full attention — and keeps a door of its own.
+        The parent holds the companies. Each company does one thing with full attention — and
+        keeps a door of its own.
       </p>
       <div className="mt-8 flex justify-center">
         <Button asChild variant="outline">

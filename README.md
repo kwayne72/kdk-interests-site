@@ -1,12 +1,11 @@
 # KDK Interests
 
-Holding company site for **KDK Interests LLC** — the parent under the Trust, and the front door for the companies it holds.
+Holding company site for **KDK Interests LLC** — the parent company and front door for the companies it holds.
 
 ```
-Family Trust
-  → KDK Interests LLC   (this site)
-       → KDK TX         homes  → https://kdktx.com
-       → KDK Media      stories
+KDK Interests LLC   (this site)
+  → KDK TX         homes  → https://kdktx.com
+  → KDK Media      stories
 ```
 
 ## Pages
